@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Turbo Night</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="stage"></div>
+
+  <div id="hud" class="hidden">
+    <div><span id="speed">0</span> km/h</div>
+    <div><span id="distance">0</span> m</div>
+  </div>
+
+  <div id="menu" class="overlay">
+    <h1>Turbo Night</h1>
+    <p>Race down the highway after dark.<br>Weave through traffic. One crash ends the run.</p>
+    <button id="startBtn" type="button">Start engine</button>
+    <small>Steer: arrow keys or A / D &middot; Touch: hold left or right side of the screen</small>
+  </div>
+
+  <div id="gameover" class="overlay hidden">
+    <h1>Crashed</h1>
+    <p id="finalScore">0 m</p>
+    <button id="restartBtn" type="button">Race again</button>
+    <small>Press Enter or Space to restart</small>
+  </div>
+
+  <!-- Three.js 3D library (free, loaded from a CDN, so you need internet the first time) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>
